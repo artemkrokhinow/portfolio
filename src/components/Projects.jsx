@@ -3,57 +3,56 @@ import ProjectCard from './ProjectCard';
 
 const projectsData = [
   {
-    title: "E-Commerce Платформа",
-    description: "Современный интернет-магазин с корзиной, оплатой и личным кабинетом. Построен с фокусом на производительность и конверсию.",
-    tags: ["React", "Node.js", "MongoDB"],
-    link: "#"
+    title: 'E-Commerce Platform',
+    description: 'Full-stack e-commerce platform with dynamic catalog, cart, and secure checkout.',
+    tags: ['React', 'Node.js', 'MongoDB'],
+    link: 'https://full-stack-developer-test-production.up.railway.app/',
+    github: 'https://github.com/artemkrokhinow/Full-Stack-Developer-Test',
+    image: '/store.png'
   },
   {
-    title: "SaaS Дашборд",
-    description: "Аналитическая панель для B2B сегмента. Графики реального времени, управление пользователями и сложные фильтры.",
-    tags: ["Vue", "Tailwind", "Firebase"],
-    link: "#"
+    title: 'ElevenLabs Voice App',
+    description: 'Interactive text-to-speech app using ElevenLabs API for real-time voice synthesis and playback.',
+    tags: ['React', 'ElevenLabs API', 'Render'],
+    link: '#',
+    github: 'https://github.com/artemkrokhinow/elevenlabs'
   },
   {
-    title: "AI Генератор Изображений",
-    description: "Интеграция с нейросетями для создания изображений по текстовому описанию. Удобный интерфейс и галерея генераций.",
-    tags: ["Next.js", "OpenAI API", "PostgreSQL"],
-    link: "#"
+    title: 'Real-Time Messenger',
+    description: 'Real-time communication app featuring live chat rooms, user presence, and message history.',
+    tags: ['React', 'Node.js', 'Render'],
+    link: 'https://mymessenger-4jqz.onrender.com',
+    github: 'https://github.com/artemkrokhinow/messenger',
+    image: '/messenger.png'
   },
   {
-    title: "Мобильное Приложение",
-    description: "Приложение для фитнеса с оффлайн-режимом, пуш-уведомлениями и синхронизацией тренировок (PWA).",
-    tags: ["React", "PWA", "Service Workers"],
-    link: "#"
+    title: 'Psychological Support',
+    description: 'Accessible platform providing mental health resources, emergency guidance, and professional support.',
+    tags: ['React', 'Node.js', 'REST API'],
+    link: 'https://shelter-1-rhi3.onrender.com',
+    github: 'https://github.com/artemkrokhinow/Psychological-Support-Platform',
+    image: '/shelter.png'
   },
   {
-    title: "Корпоративный Сайт",
-    description: "Премиальный сайт для крупного бренда. Сложные 3D-анимации, оптимизация SEO и CMS для управления контентом.",
-    tags: ["Three.js", "GSAP", "Sanity CMS"],
-    link: "#"
-  },
-  {
-    title: "Web3 NFT Маркетплейс",
-    description: "Децентрализованная платформа для обмена NFT. Смарт-контракты, интеграция криптокошельков и аукционы.",
-    tags: ["Solidity", "Ethers.js", "React"],
-    link: "#"
+    title: 'Upcoming Full-Stack App',
+    description: 'Advanced full-stack application currently in development. Focused on scalable architecture and real-time data processing.',
+    tags: ['Architecture', 'TBA'],
+    comingSoon: true,
   }
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="container" style={{ paddingTop: '50px', paddingBottom: '100px' }}>
-      <div className="animate-fade-in">
-        <h2 className="section-title">Мои <span className="text-gradient">Проекты</span></h2>
+    <section id="projects" className="glass animate-fade-in" style={{ padding: '2rem', height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <h2 style={{ fontSize: '2.5rem' }}>My <span className="text-gradient">Projects</span></h2>
       </div>
       
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
-        gap: '2rem' 
-      }}>
+      <div className="projects-flex" style={{ flex: 1, overflowY: 'auto', paddingRight: '0.5rem' }}>
         {projectsData.map((project, index) => (
-          <ProjectCard key={index} index={index} {...project} />
+          <div className="project-wrapper" key={index}>
+            <ProjectCard index={index} {...project} />
+          </div>
         ))}
       </div>
     </section>
