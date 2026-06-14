@@ -46,6 +46,13 @@ const projects = [
     tags: ['React', 'ElevenLabs API', 'REST'],
     github: 'https://github.com/artemkrokhinow/elevenlabs',
   },
+  {
+    num: '06',
+    title: 'More on GitHub',
+    desc: 'Explore the rest of my open-source projects, educational repositories, and experiments.',
+    tags: ['Open Source', 'Code', 'Experiments'],
+    github: 'https://github.com/artemkrokhinow',
+  },
 ];
 
 const skillCategories = [

@@ -350,12 +350,13 @@ body::before {
 
 .projects-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
 .project-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 0;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -737,7 +738,7 @@ body::before {
   .footer { padding: 24px; flex-direction: column; gap: 8px; }
   .resume-page { padding: 80px 24px 24px; }
 
-  .project-card {
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
