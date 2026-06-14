@@ -35,7 +35,6 @@ const projects = [
     title: 'E-Commerce Platform',
     desc: 'Full-stack store with real-time catalog, cart system, and secure Stripe-style checkout flow.',
     tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-    demo: 'https://full-stack-developer-test-production.up.railway.app/',
     github: 'https://github.com/artemkrokhinow/Full-Stack-Developer-Test',
     image: '/store.png',
   },
