@@ -26,7 +26,7 @@ const projects = [
     title: 'Real-Time Messenger',
     desc: 'Instant messaging app with live chat rooms, online presence indicators, and persistent history.',
     tags: ['React', 'Socket.IO', 'Node.js', 'MongoDB'],
-    demo: 'https://mymessenger-4jqz.onrender.com',
+    demo: 'https://mymessenger-4jqz.onrender.com/login',
     github: 'https://github.com/artemkrokhinow/messenger',
     image: '/messenger.png',
   },
